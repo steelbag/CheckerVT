@@ -19,7 +19,7 @@ public class Piece : MonoBehaviour {
                 if (p != null && p.isWhite != isWhite)
                 {
                     // Check if its possible to land after the jump
-                    if (board[x - 2, y + 2])
+                    if (board[x - 2, y + 2] == null)
                         return true;
                 }
             }
@@ -31,7 +31,7 @@ public class Piece : MonoBehaviour {
                 if (p != null && p.isWhite != isWhite)
                 {
                     // Check if its possible to land after the jump
-                    if (board[x + 2, y + 2])
+                    if (board[x + 2, y + 2] == null)
                         return true;
                 }
             }
@@ -47,7 +47,7 @@ public class Piece : MonoBehaviour {
                 if (p != null && p.isWhite != isWhite)
                 {
                     // Check if its possible to land after the jump
-                    if (board[x - 2, y - 2])
+                    if (board[x - 2, y - 2] == null)
                         return true;
                 }
             }
@@ -59,7 +59,7 @@ public class Piece : MonoBehaviour {
                 if (p != null && p.isWhite != isWhite)
                 {
                     // Check if its possible to land after the jump
-                    if (board[x + 2, y - 2])
+                    if (board[x + 2, y - 2] == null)
                         return true;
                 }
             }
